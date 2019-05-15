@@ -44,3 +44,8 @@ cp /etc/nginx /backup/nginx
 echo 'deb http://deb.debian.org/debian stretch-backports main' >> /etc/apt/sources.list
 apt-get install certbot python-certbot-nginx -t stretch-backports
 certbot certonly --webroot --agree-tos --email $mail --no-eff-email -d $domain
+
+
+
+apt-get install fail2ban
+cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
