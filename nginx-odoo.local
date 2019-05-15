@@ -1,0 +1,3 @@
+[Definition]
+failregex = <HOST> .* "POST \/web\/login HTTP/\S+" 200
+ignoreregex =
