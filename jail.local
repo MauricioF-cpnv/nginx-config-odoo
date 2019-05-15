@@ -1,0 +1,8 @@
+[nginx-odoo]
+
+enabled  = true
+port     = http,https
+filter   = nginx-odoo
+logpath  = /var/log/nginx/access.log
+maxretry = 6
+findtime = 600
